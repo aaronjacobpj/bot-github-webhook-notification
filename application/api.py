@@ -4,8 +4,6 @@ from flask import current_app as app
 from flask import request, jsonify
 
 
-
-
 @app.route("/google-space/git-push", methods=["POST"])
 def google_space_git_push():
     """
@@ -14,5 +12,3 @@ def google_space_git_push():
 
     GOOGLE_BOT.send_git_push_notification(request.json)
     return jsonify({"message": "Request Successful"})
-
-
