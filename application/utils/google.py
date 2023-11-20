@@ -25,7 +25,7 @@ class GoogleSpace:
         bot_image="https://developers.google.com/chat/images/quickstart-app-avatar.png",
         bot_alt_image_text="Avatar for Daisy",
         file_text_color="#e11d48",
-        commit_button_color=[0.4, 0.8, 0.77, 0.5],
+        commit_button_color=[1, 0.423, 0.133, 0.5],
         commit_branch_color="#0766AD",
     ) -> None:
         """
@@ -106,7 +106,7 @@ class GoogleSpace:
         ]
 
     def create_commit_link_button(self, url):
-         """
+        """
         Returns a button components for the message.
 
         Parameters:
